@@ -1,0 +1,111 @@
+s	<section>
+		<!-- left side start-->
+		<div class="left-side sticky-left-side">
+			<!--logo and iconic logo start-->
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="logo-icon text-center">
+				<a href="index.html"><img src="images/logo_icon.png" alt=""></a>
+			</div>
+			<!--logo and iconic logo end-->
+			<div class="left-side-inner">
+
+				<!-- visible to small devices only -->
+
+				<!--sidebar nav start-->
+				<ul class="nav nav-pills nav-stacked custom-nav">
+					<li><a ng-href="#/admins/news"><i class="fa fa-laptop"></i><span>News Activity</span></a></li>
+					<li><a ng-href="#/admins/article"><i class="fa fa-laptop"></i><span>Articles</span></a></li>
+					<li><a ng-href="#/admins/bio"><i class="fa fa-laptop"></i><span>Bio</span></a></li>
+					<li><a ng-href="#/admins/notification"><i class="fa fa-laptop"></i><span>Notification</span></a></li>
+					<li><a ng-href="#/admins/bioCategory"><i class="fa fa-laptop"></i><span>Bio Category</span></a></li>
+					<li><a ng-href="#/admins/bioSpecification"><i class="fa fa-laptop"></i><span>Bio Specification</span></a></li>
+					<li><a ng-href="#/admins/dataAnalyze"><i class="fa fa-laptop"></i><span>dataAnalyze</span></a></li>
+					<li><a ng-href="#/admins/dataAnalyzeCategory"><i class="fa fa-laptop"></i><span>dataAnalyzeCategory</span></a></li>
+					<li><a ng-href="#/admins/images"><i class="fa fa-laptop"></i><span>Images</span></a></li>
+					<li><a ng-href="#/admins/Resources"><i class="fa fa-laptop"></i><span>Resources</span></a></li>
+					<li><a ng-href="#/admins/Role"><i class="fa fa-laptop"></i><span>Role</span></a></li>
+					<li><a ng-href="#/admins/User"><i class="fa fa-laptop"></i><span>User</span></a></li>
+					<li><a ng-href="#/admins/studyTeam"><i class="fa fa-laptop"></i><span>studyTeam</span></a></li>
+					<li><a ng-href="#/admins/scholarInteraction"><i class="fa fa-laptop"></i><span>scholarInteraction</span></a></li>
+				</ul>
+				<!--sidebar nav end-->
+
+			</div>
+		</div>
+		<!-- left side end-->
+		<!-- main content start-->
+		<div class="main-content" >
+			<!-- header section start-->
+			<div class="header-section">
+
+				<!--toggle button start-->
+				<a class="toggle-btn"><i class="fa fa-bars"></i></a>
+				<!--toggle button end-->
+
+			</div>
+			<!-- header section end-->
+
+			<!-- page heading start-->
+			<div class="page-heading">
+				<h3>DataAnalyze</h3>
+			</div>
+			<!-- news list start  -->
+			<div ng-controller="dataAnalyzeAddController">
+                <form class="form-horizontal">
+                	<input type="hidden" ng-model="id">
+                	 						<th>id</th>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">id:</label>
+							<div class="col-sm-10">
+								<input ng-model="id"  placeholder="id">
+							</div>
+					  	</div> 
+											<th>dataAnalyzeCatId</th>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">dataAnalyzeCatId:</label>
+							<div class="col-sm-10">
+								<input ng-model="dataAnalyzeCatId"  placeholder="dataAnalyzeCatId">
+							</div>
+					  	</div> 
+											<th>dataAnalyzeTitle</th>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">dataAnalyzeTitle:</label>
+							<div class="col-sm-10">
+								<input ng-model="dataAnalyzeTitle"  placeholder="dataAnalyzeTitle">
+							</div>
+					  	</div> 
+											<th>dataAnalyzeLink</th>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">dataAnalyzeLink:</label>
+							<div class="col-sm-10">
+								<input ng-model="dataAnalyzeLink"  placeholder="dataAnalyzeLink">
+							</div>
+					  	</div> 
+									  <div>
+				&nbsp;<button class="btn btn-success" ng-click="dataAnalyze_save();">
+				<span class="save"></span>Save
+				</button>
+				&nbsp;<button class="btn btn-warning" ng-click="dataAnalyze_list();">
+				<span class="update"></span>Return
+				</button>
+				</button>
+			</div>
+				</form>
+				<hr>
+			</div>
+			<!-- news list end  -->
+			
+			<!-- page heading end-->
+
+			<!--body wrapper start-->
+			<!--body wrapper end-->
+
+			<!--footer section start-->
+			<footer> 2016 &copy; Developed by Shirley </footer>
+			<!--footer section end-->
+		</div>
+		<!-- main content end-->
+	</section>
+

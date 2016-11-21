@@ -1,0 +1,77 @@
+    <div id="main" ng-controller="newsController">
+	
+    <div class="container">
+      <div class="row">
+
+        <div class="col-sm-7 project-introduction">
+          <p class="project-introduction-title">项目简介</p>
+          <p class="project-introduction-paragraph">
+          	“保障人类健康”是我国生物安全优先考虑的战略重点之一。医学媒介生物及其相关病原体的入侵可引起如登革热、寨卡病毒病、疟疾、锥虫病、血吸虫病、广州管圆线虫病等重要热带病的流行、疫情暴发与扩散，甚至成为重大公共卫生安全事件，对人类健康和社会稳定构成极大威胁。
+          </p>
+					<p class="project-introduction-paragraph">
+          	本项目拟以入侵螺类（福寿螺和褐云玛瑙螺、藁杆双脐螺）、入侵伊蚊（埃及伊蚊和白纹伊蚊）、输入性病原体（疟原虫、锥虫和血吸虫）等为研究对象，开展它们的入侵与疾病传病相关的生物学特性研究，为建立媒介生物及其病原体入侵、扩散和传播的快速侦查、风险评估及预警处置体系提供科学依据和技术支撑，以推动我国生物安全科技支撑能力建设。
+          </p>
+          <p class="project-introduction-paragraph">
+           围绕“主要入侵生物入侵致害相关生物学特性，鉴别其分子标记以及与宿主相互作用的分子机制”的关键科学问题，本项目拟设置4 个课题。
+          </p>
+          <p class="project-introduction-paragraph" ng-repeat="news in items">
+           <a ng-href="#/views/news/{{news.id}}"><b>{{ news.subject}}</b></a> {{ news.updateDate | date:'mediumDate'}}
+          </p>
+		</div>
+
+        <div class="sidebar col-sm-5 ">
+          
+          <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+              <div class="panel panel-success">
+                <div class="more-news">
+                  <a href="http://news2.sysu.edu.cn/">More >></a>
+                </div>
+                <div class="panel-heading">
+                  <h3 class="panel-title">项目进展</h3>
+                </div>
+                <div class="panel-body">    
+                </div>   <!-- /.panel-body -->
+              </div><!-- /.panel-success -->
+
+              <div class="panel panel-danger">
+                <div class="more-notifications">
+                  <a href="http://www.sysu.edu.cn/2012/en/announcements/index.htm">More >></a>
+                </div>
+                <div class="panel-heading">
+                  <h3 class="panel-title">发表文章</h3>
+                </div>
+                <div class="panel-body">
+                </div><!-- /.panel-body -->
+              </div><!-- /.panel-danger -->
+
+              <div class="page-header">
+                合作单位
+              </div>
+              <div class="row">
+                <div class="col-sm-3 coop1">
+                  <img src="pics/cooperators_logo/1.gif" title="中山大学" height="112">
+                </div>
+                <div class="col-sm-3 coop2">
+                  <img src="pics/cooperators_logo/2.jpg" title="中国疾病预防控制中心" height="102">
+                </div>
+                <div class="col-sm-3 coop3">
+                  <img src="pics/cooperators_logo/3.png" title="复旦大学" height="92">
+                </div>
+                <div class="col-sm-3 coop4">
+                  <img src="pics/cooperators_logo/4.jpg" title="南方医科大学" height="110">
+                </div>
+              </div>              
+
+            </div><!-- col-sm-11 col-sm-offset-1 -->
+          </div><!-- /row -->   
+
+        </div><!-- /.sidebar -->
+      </div> <!-- /row -->
+
+      <hr>
+      
+      
+    </div> <!-- /container -->
+
+	</div> <!-- main -->

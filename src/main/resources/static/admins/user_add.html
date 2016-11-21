@@ -1,0 +1,114 @@
+	<section>
+		<!-- left side start-->
+		<div class="left-side sticky-left-side">
+			<!--logo and iconic logo start-->
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="logo-icon text-center">
+				<a href="index.html"><img src="images/logo_icon.png" alt=""></a>
+			</div>
+			<!--logo and iconic logo end-->
+			<div class="left-side-inner">
+
+				<!-- visible to small devices only -->
+
+				<!--sidebar nav start-->
+				<ul class="nav nav-pills nav-stacked custom-nav">
+					<li><a ng-href="#/admins/news"><i class="fa fa-laptop"></i><span>News Activity</span></a></li>
+					<li><a ng-href="#/admins/article"><i class="fa fa-laptop"></i><span>Articles</span></a></li>
+					<li><a ng-href="#/admins/bio"><i class="fa fa-laptop"></i><span>Bio</span></a></li>
+				</ul>
+				<!--sidebar nav end-->
+
+			</div>
+		</div>
+		<!-- left side end-->
+		<!-- main content start-->
+		<div class="main-content" >
+			<!-- header section start-->
+			<div class="header-section">
+
+				<!--toggle button start-->
+				<a class="toggle-btn"><i class="fa fa-bars"></i></a>
+				<!--toggle button end-->
+
+			</div>
+			<!-- header section end-->
+
+			<!-- page heading start-->
+			<div class="page-heading">
+				<h3>User</h3>
+			</div>
+			<!-- news list start  -->
+			<div ng-controller="userAddController">
+                <form class="form-horizontal">
+                	<input type="hidden" ng-model="id">
+                	 						<th>id</th>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">id:</label>
+							<div class="col-sm-10">
+								<input ng-model="id"  placeholder="id">
+							</div>
+					  	</div> 
+											<th>username</th>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">username:</label>
+							<div class="col-sm-10">
+								<input ng-model="username"  placeholder="username">
+							</div>
+					  	</div> 
+											<th>password</th>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">password:</label>
+							<div class="col-sm-10">
+								<input ng-model="password"  placeholder="password">
+							</div>
+					  	</div> 
+											<th>status</th>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">status:</label>
+							<div class="col-sm-10">
+								<input ng-model="status"  placeholder="status">
+							</div>
+					  	</div> 
+											<th>desc</th>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">desc:</label>
+							<div class="col-sm-10">
+								<input ng-model="desc"  placeholder="desc">
+							</div>
+					  	</div> 
+											<th>teamId</th>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">teamId:</label>
+							<div class="col-sm-10">
+								<input ng-model="teamId"  placeholder="teamId">
+							</div>
+					  	</div> 
+									  <div>
+				&nbsp;<button class="btn btn-success" ng-click="user_save();">
+				<span class="save"></span>Save
+				</button>
+				&nbsp;<button class="btn btn-warning" ng-click="user_list();">
+				<span class="update"></span>Return
+				</button>
+				</button>
+			</div>
+				</form>
+				<hr>
+			</div>
+			<!-- news list end  -->
+			
+			<!-- page heading end-->
+
+			<!--body wrapper start-->
+			<!--body wrapper end-->
+
+			<!--footer section start-->
+			<footer> 2016 &copy; Developed by Shirley </footer>
+			<!--footer section end-->
+		</div>
+		<!-- main content end-->
+	</section>
+
