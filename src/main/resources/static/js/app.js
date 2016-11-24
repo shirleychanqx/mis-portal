@@ -14,6 +14,10 @@ angular.module('misApp',['ngRoute']).config(function($routeProvider){
         templateUrl : '/views/news_detail.html',
         controller  : 'newsDetailController'
     })
+    .when('/views/studyTeam', {
+        templateUrl : '/views/study_team.html',
+        controller  : 'studyTeamController'
+    })
     ;
     
     

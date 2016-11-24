@@ -1,0 +1,123 @@
+
+<div id="main" ng-controller="studyTeamController">
+
+	<!--sidebar nav start-->
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container">
+				<ul class="nav">
+
+					<!-- 
+				                <a class="brand" href=""><label ng-model="mainTeam"></label>{{ mainTeam }}</a>
+				                <li class="active" ng-repeat="mainMember in mainMembers"><a href="">{{ mainMember.username }}</a></li>
+				                
+				                <li class="dropdown" id="accountmenu">
+				                    <a class="dropdown-toggle" data-toggle="dropdown">Tutorials<b class="caret"></b></a>
+				                    <ul class="dropdown-menu">
+				                        <li><a href="">PHP</a></li>
+				                        <li><a href="">MySQL</a></li>
+				                        <li class="divider"></li>
+				                        <li><a href="#">JavaScript</a></li>
+				                        <li><a href="">HTML5</a></li>
+				                    </ul>
+				                </li>
+				                 -->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<h1>Dropdown Example下拉菜单实例</h1>
+		<div class="container">
+			<nav>
+				<ul class="mcd-menu">
+					<li><input type="hidden" ng-model="mainTeamId"> <a
+						href="" ng-model="mainTeam"> <i class="fa fa-home"></i> <strong>{{
+								mainTeam }}</strong> <!-- 
+							 <small>sweet home</small>
+						 -->
+							<ul>
+								<li ng-repeat="mainMember in mainMembers"><a href="" > <i
+										class="fa fa-globe"></i>{{ mainMember.username }}
+								</a></li>
+							</ul>
+					</a></li>
+					<li><a href="" class="active"> <i class="fa fa-edit"></i>
+							<strong>参与团队</strong>
+							<ul>
+								<li ng-repeat="otherTeam in otherTeams">
+								<a href="" ><strong>{{ otherTeam.teamGroupName }}</strong></a>
+								<ul>
+									<li ng-repeat="user in otherTeam.users">
+										<a href=""> <i class="fa fa-globe">{{ user.username }}</i></a>
+									</li>
+								</ul>
+								</li>
+							</ul>
+					</a></li>
+					<!-- 
+					
+					<li><a href=""> <i class="fa fa-gift"></i> <strong>Features</strong>
+							<small>sweet home</small>
+					</a></li>
+					<li><a href=""> <i class="fa fa-globe"></i> <strong>News</strong>
+							<small>sweet home</small>
+					</a></li>
+					<li><a href=""> <i class="fa fa-comments-o"></i> <strong>Blog</strong>
+							<small>what they say</small>
+					</a>
+						<ul>
+							<li><a href="#"><i class="fa fa-globe"></i>Mission</a></li>
+							<li><a href="#"><i class="fa fa-group"></i>Our Team</a>
+								<ul>
+									<li><a href="#"><i class="fa fa-female"></i>Leyla
+											Sparks</a></li>
+									<li><a href="#"><i class="fa fa-male"></i>Gleb
+											Ismailov</a>
+										<ul>
+											<li><a href="#"><i class="fa fa-leaf"></i>About</a></li>
+											<li><a href="#"><i class="fa fa-tasks"></i>Skills</a></li>
+										</ul></li>
+									<li><a href="#"><i class="fa fa-female"></i>Viktoria
+											Gibbers</a></li>
+								</ul></li>
+							<li><a href="#"><i class="fa fa-trophy"></i>Rewards</a></li>
+							<li><a href="#"><i class="fa fa-certificate"></i>Certificates</a></li>
+						</ul></li>
+					<li><a href=""> <i class="fa fa-picture-o"></i> <strong>Portfolio</strong>
+							<small>sweet home</small>
+					</a></li>
+					<li><a href=""> <i class="fa fa-envelope-o"></i> <strong>Contacts</strong>
+							<small>drop a line</small>
+					</a></li>
+					<li class="float"><a class="search"> <input type="text"
+							value="search ...">
+							<button>
+								<i class="fa fa-search"></i>
+							</button>
+					</a> <a href="" class="search-mobile"> <i class="fa fa-search"></i>
+					</a></li>
+					 -->
+				</ul>
+			</nav>
+		</div>
+
+
+	</div>
+</div>
+<!--sidebar nav end-->
+<div class="container">
+	<div>
+		<div>ghjh</div>
+	</div>
+	<div class="row">ewtrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr</div>
+	<!-- /row -->
+
+	<hr>
+
+
+</div>
+<!-- /container -->
+
+</div>
+<!-- main -->
